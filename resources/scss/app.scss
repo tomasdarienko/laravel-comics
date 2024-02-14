@@ -107,3 +107,26 @@
 .bottom_footer{
      background-color: #2a2a2a;
 }
+
+.single_photo{
+
+     position: relative;
+     .bg-primary{
+          height: 100px;
+     }
+     img{
+          width: 350px;
+         position: absolute;
+     //     top: 0px;
+         bottom: 40px;
+         left: 300px;
+     }
+}
+
+.prezzo{
+     height: 50px;
+     background-color: rgb(25, 181, 25);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
