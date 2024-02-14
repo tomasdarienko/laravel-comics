@@ -20,4 +20,16 @@ Route::get('/', function () {
     return view('main',compact('comics'));
 })->name('comics');
 
+Route::get('/main/{param}', function($param) {
 
+    $comics = config('comics');
+
+    $comic = null;
+    foreach ($comics as $item ) {
+        if($item['id'] == $param){
+            $comic = $item;
+        }
+    }
+
+    return view('single', compact('comic'));
+})->name('single');
